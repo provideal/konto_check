@@ -19,7 +19,7 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
-src/*.o
-src/*.log
-src/*.bundle
-src/Makefile
+ext/konto_check/*.o
+ext/konto_check/*.log
+ext/konto_check/*.bundle
+ext/konto_check/Makefile

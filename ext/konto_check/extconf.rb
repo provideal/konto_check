@@ -18,7 +18,7 @@
 require 'mkmf'
 
 # Give it a name
-extension_name = 'kontocheck'
+extension_name = 'konto_check'
 
 if have_library("z", "uncompress")
   # The destination

@@ -1,9 +1,24 @@
 = konto_check
 
-Description goes here.
+Check whether a certain bic/account-no-combination can possibly be valid.
+
+It uses the C library konto_check (see http://sourceforge.net/projects/kontocheck/) by
+Michael Plugge.
+
+To use it blah blah blah....
+
+>> require "konto_check"
+=> true
+>> KontoCheck::konto_check("52001","52250030")
+=> true
+>> KontoCheck::bank_name("52001")
+=> "hahaa!"
+(Wutt??? Doesn't work yet. Obviously)
+
+TODO: Reasonable description
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
@@ -14,4 +29,4 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2010 Peter Horn. See LICENSE for details.
+Copyright (c) 2010 Provideal Systems GmbH. See LICENSE for details.
