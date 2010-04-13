@@ -40,7 +40,8 @@ void Init_konto_check() {
   KontoCheck = rb_define_module("KontoCheck");
   rb_define_module_function(KontoCheck, "konto_check", konto_check, 2);
   rb_define_module_function(KontoCheck, "bank_name", bank_name, 1);
-  lut_init("blz.lut",5,0);
+  int ret = lut_init("blz.lut",5,0);
+  // TODO: provide a reasonable way to locate the lut file.
 }
 
 
