@@ -36,7 +36,7 @@ VALUE bank_name(VALUE self, VALUE bic) {
 }
 
 // The initialization method for this module
-void Init_kontocheck() {
+void Init_konto_check() {
   KontoCheck = rb_define_module("KontoCheck");
   rb_define_module_function(KontoCheck, "konto_check", konto_check, 2);
   rb_define_module_function(KontoCheck, "bank_name", bank_name, 1);
