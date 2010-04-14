@@ -31,7 +31,7 @@ h3. <tt>KontoCheck::konto_check(&lt;kto&gt;, &lt;blz&gt;)</tt>
 check whether the given account number <tt>kto</tt> ca possibly be
 a valid number of the bank with the bic <tt>blz</tt>.
 
-h3. <tt>KontoCheck::load_bank_data(&lt;datafile&gt;)</datafile>
+h3. <tt>KontoCheck::load_bank_data(&lt;datafile&gt;)</tt>
 
 initialize the underlying C library konto_check with the bank
 information from the file <tt>datafile</tt>.
