@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Provideal Systems GmbH"]
-  s.date = %q{2010-04-13}
+  s.date = %q{2010-04-14}
   s.description = %q{Check whether a certain bic/account-no-combination can possibly be valid. It uses the C library kontocheck (see http://sourceforge.net/projects/kontocheck/) by Michael Plugge.}
   s.email = %q{info@provideal.net}
   s.extensions = ["ext/konto_check/extconf.rb"]
@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
      "ext/konto_check/konto_check.c",
      "ext/konto_check/konto_check.h",
      "ext/konto_check/konto_check_ruby.c",
+     "konto_check.gemspec",
      "lib/blz.lut",
      "lib/blz.lut2",
      "test/helper.rb",

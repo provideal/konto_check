@@ -8,25 +8,41 @@ Michael Plugge.
 To use it blah blah blah....
 
 >> require "konto_check"
-=> true
+true
+
+>> KontoCheck::load_bank_data("./BLZ_20100308.txt")
+true
+
 >> KontoCheck::konto_check("52001","52250030")
-=> true
->> KontoCheck::bank_name("52001")
-=> "hahaa!"
+true
+
+>> KontoCheck::bank_name("52250030")
+"hahaa!"
 (Wutt??? Doesn't work yet. Obviously)
 
 TODO: Reasonable description
 
-== Note on Patches/Pull Requests
+== Short 'Documentation'
 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+=== KontoCheck::konto_check(<kto>, <blz>)
 
-== Copyright
+check whether the given account number kto kann possibly be
+a valid number of the bank with the bic blz.
 
-Copyright (c) 2010 Provideal Systems GmbH. See LICENSE for details.
+=== KontoCheck::load_bank_data(<datafile>)
+
+initialize the underlying C library konto_check with the bank
+information from datafile.
+Internally, this file is first transformed into a LUT file and then
+read.
+
+For the datafile, use the file 'blz_yyyymmdd.txt' from
+http://www.bundesbank.de/zahlungsverkehr/zahlungsverkehr_bankleitzahlen_download.php
+These files are updated every three months, so be sure to
+replace them regularly.
+
+=== KontoCheck::bank_name(<blz>)
+
+gives the name of the bank as a string or nil
+if no bank with the given name exists.
+

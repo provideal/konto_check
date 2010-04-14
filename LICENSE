@@ -12,3 +12,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+ACKNOWLEDGEMENT
+
+This software is entirely based on the C library konto_check
+http://www.informatik.hs-mannheim.de/konto_check/
+http://sourceforge.net/projects/kontocheck/
+by Michael Plugge.
