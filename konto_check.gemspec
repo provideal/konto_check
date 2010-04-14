@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{konto_check}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Provideal Systems GmbH"]
@@ -15,13 +15,13 @@ Gem::Specification.new do |s|
   s.extensions = ["ext/konto_check/extconf.rb"]
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.textile"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "LICENSE",
-     "README.rdoc",
+     "README.textile",
      "Rakefile",
      "VERSION.yml",
      "ext/konto_check/extconf.rb",
@@ -29,15 +29,13 @@ Gem::Specification.new do |s|
      "ext/konto_check/konto_check.h",
      "ext/konto_check/konto_check_ruby.c",
      "konto_check.gemspec",
-     "lib/blz.lut",
-     "lib/blz.lut2",
      "test/helper.rb",
      "test/test_konto_check.rb"
   ]
   s.homepage = %q{http://github.com/provideal/konto_check}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{Checking german BICs/Bank account numbers}
   s.test_files = [
     "test/helper.rb",

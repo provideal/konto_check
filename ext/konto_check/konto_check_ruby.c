@@ -83,11 +83,11 @@ VALUE load_bank_data(VALUE self, VALUE path_rb) {
     case LUT1_FILE_GENERATED:
       break;
     case FILE_READ_ERROR:
-      rb_raise(rb_eRuntimeError, "[%d] KontoCheck: can not open file '%s'.", ret, path);
+      rb_raise(rb_eRuntimeError, "[%d] KontoCheck: can not open file '%s'. Use the file 'blz_yyyymmdd.txt' from http://www.bundesbank.de/zahlungsverkehr/zahlungsverkehr_bankleitzahlen_download.php", ret, path);
     case INVALID_BLZ_FILE:
       rb_raise(rb_eRuntimeError, "[%d] KontoCheck: invalid input file '%s'. Use the file 'blz_yyyymmdd.txt' from http://www.bundesbank.de/zahlungsverkehr/zahlungsverkehr_bankleitzahlen_download.php", ret, path);
     default:
-      rb_raise(rb_eRuntimeError, "[%d] KontoCheck: error reading file '%s'.", ret, tmp_lut);
+      rb_raise(rb_eRuntimeError, "[%d] KontoCheck: error reading file '%s'. Use the file 'blz_yyyymmdd.txt' from http://www.bundesbank.de/zahlungsverkehr/zahlungsverkehr_bankleitzahlen_download.php", ret, tmp_lut);
   }
 
   // read the LUT file
