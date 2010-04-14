@@ -1,12 +1,13 @@
-= konto_check
+= KontoCheck
 
-Check whether a certain bic/account-no-combination can possibly be valid.
+Check whether a certain bic/account-no-combination can possibly be valid for a German bank.
 
 It uses the C library konto_check (see http://sourceforge.net/projects/kontocheck/) by
 Michael Plugge.
 
-To use it blah blah blah....
+== example
 
+<pre>
 >> require "konto_check"
 true
 
@@ -19,8 +20,7 @@ true
 >> KontoCheck::bank_name("52250030")
 "hahaa!"
 (Wutt??? Doesn't work yet. Obviously)
-
-TODO: Reasonable description
+</pre>
 
 == Short 'Documentation'
 
@@ -46,3 +46,7 @@ replace them regularly.
 gives the name of the bank as a string or nil
 if no bank with the given name exists.
 
+== License
+
+Since the original http://www.informatik.hs-mannheim.de/konto_check/ is
+licensed under LGPL, so is this module.
